@@ -1,0 +1,21 @@
+Windows Registry Editor Version 5.00
+
+; Auto-Editor -> Adobe Premiere Pro XML
+; Adds a context-menu item to MP3 files.
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mp3\shell\Auto-Editor Premiere XML]
+@="Generate Premiere Pro XML"
+"Icon"="cmd.exe"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mp3\shell\Auto-Editor Premiere XML\command]
+@="\"C:\\Auto_Editor\\handler.bat\" \"%1\""
+
+; Auto-Editor -> Adobe Premiere Pro XML
+; Adds the same context-menu item to WAV files.
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.wav\shell\Auto-Editor Premiere XML]
+@="Generate Premiere Pro XML"
+"Icon"="cmd.exe"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.wav\shell\Auto-Editor Premiere XML\command]
+@="\"C:\\Auto_Editor\\handler.bat\" \"%1\""
